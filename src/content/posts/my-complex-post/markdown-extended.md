@@ -3,91 +3,18 @@ title: test file 2
 published: 2025-12-7
 updated: 2025-12-7
 description: 'Read more about Markdown features in Mizuki'
-image: ''
+image: './cover.png'
 tags: [Demo, Example, Markdown, mizuki]
 category: 'Examples'
 draft: false 
 ---
 
-## GitHub Repository Cards
-You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API. 
+# 四层与七层负载均衡
+## 什么是四层与七层负载均衡
+**判定标准：**osi七层协议，能解析到哪一层就是哪一层的设备
+**下定义**
+1. 客户端产生一个数据包，就好比是一个快递包，层层包裹七层
+2. 负载均衡的作用：分析用户的请求包，然依据内部的算法，分发后其代理的后续节点
+3. 四层：解析到四层，看到的是tcp或udp协议，然后基于ip+prot进行转发
+4. 七层：解析到七层，看到的是七层协议，例如http协议，然后url地址进行转发
 
-::github{repo="matsuzaka-yuki/Mizuki"}
-
-Create a GitHub repository card with the code `::github{repo="matsuzaka-yuki/Mizuki"}`.
-
-```markdown
-::github{repo="matsuzaka-yuki/Mizuki"}
-```
-
-## Admonitions
-
-Following types of admonitions are supported: `note` `tip` `important` `warning` `caution`
-
-:::note
-Highlights information that users should take into account, even when skimming.
-:::
-
-:::tip
-Optional information to help a user be more successful.
-:::
-
-:::important
-Crucial information necessary for users to succeed.
-:::
-
-:::warning
-Critical content demanding immediate user attention due to potential risks.
-:::
-
-:::caution
-Negative potential consequences of an action.
-:::
-
-### Basic Syntax
-
-```markdown
-:::note
-Highlights information that users should take into account, even when skimming.
-:::
-
-:::tip
-Optional information to help a user be more successful.
-:::
-```
-
-### Custom Titles
-
-The title of the admonition can be customized.
-
-:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::
-
-```markdown
-:::note[MY CUSTOM TITLE]
-This is a note with a custom title.
-:::
-```
-
-### GitHub Syntax
-
-> [!TIP]
-> [The GitHub syntax](https://github.com/orgs/community/discussions/16925) is also supported.
-
-```
-> [!NOTE]
-> The GitHub syntax is also supported.
-
-> [!TIP]
-> The GitHub syntax is also supported.
-```
-
-### Spoiler
-
-You can add spoilers to your text. The text also supports **Markdown** syntax.
-
-The content :spoiler[is hidden **ayyy**]!
-
-```markdown
-The content :spoiler[is hidden **ayyy**]!
