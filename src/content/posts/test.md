@@ -2,7 +2,7 @@
 title: test file 1
 published: 2025-12-6
 pinned: true
-description: A simple example of a Markdown blog post.
+description: 2025.12.06.
 tags: [Markdown, Blogging]
 category: Examples
 licenseName: "Unlicensed"
