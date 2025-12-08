@@ -1,6 +1,6 @@
 ---
 title: test file 1
-published: 2025-12-6
+published: 2025-12-06
 pinned: true
 description: 2025.12.06.
 tags: [Markdown, Blogging]
